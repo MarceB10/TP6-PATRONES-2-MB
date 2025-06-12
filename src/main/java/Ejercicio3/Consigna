@@ -1,0 +1,31 @@
+Supongamos la siguiente clase Reporte:
+class Report {
+    private String reporte;
+    public Report(String reporte) {
+        this.reporte = reporte;
+    }
+
+    void export(File file) {
+        if (file == null) {
+            throw new IllegalArgumentException(
+                    "File es NULL; no puedo exportar..."
+            );
+        }
+        if (file.exists()) {
+            throw new IllegalArgumentException(
+                    "El archivo ya existe..."
+            );
+        }
+        // Exportar el reporte a un archivo.
+    }
+}
+a. Implemente la exportación.
+
+b. Utilice el pattern Decorador para reescribir la funcionalidad de Reporte, de modo tal que le
+permita escribir Reportes que exporten sin verificar si el archivo existe (o sea, lo sobreescriba)
+y Reportes que no permitan sobrescribir el archivo.
+
+
+Decoradores:
+-Sobreescribir el archivo
+-Evitar sobreescritura

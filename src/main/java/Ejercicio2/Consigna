@@ -1,0 +1,7 @@
+2. Dado el ejemplo del Canvas, Figuras aplicando composite
+(https://github.com/enriquemolinari/oop2-patterns1), quitemos la dependencia de cada Figura
+sobre Graphics2D utilizando el patron adapter. Primero cree una interfaz “Panel” que ofrezca
+los servicios de pintar los tres tipos de figura, circulo, linea y texto. Luego implemente un
+adapter para adaptar Panel a Graphics2D de modo que el sistema funcione. De esta forma
+tenemos el mismo resultado pero habiendo quitado la dependencia de las figuras sobre
+Graphics2D.
