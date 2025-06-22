@@ -2,7 +2,7 @@ package Ejercicio4;
 
 public class main {
     public static void main(String[] args) {
-        var comboPedido = new Queso(new Tomate(new Carne(new Carne(new ComboBasico("1 Medallon de carne, cebolla caramelizada, mayonesa y barbacoa.",100)))));
+        AdicionalesCombo comboPedido = new Queso(new Tomate(new Carne(new Carne(new ComboBasico("1 Medallon de carne, cebolla caramelizada, mayonesa y barbacoa.",100)))));
         System.out.println("Pedido 1: " + comboPedido.descripcion());
         System.out.println("Precio: " + comboPedido.precio() );
 

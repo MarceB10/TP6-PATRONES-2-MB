@@ -12,8 +12,7 @@ public class main {
         motorEconomico.acelerar();
         motorEconomico.apagar();
 
-        MotorElectrico motorElectrico = new MotorElectrico();
-        Motor motorElectricoAdapter = new MotorElectricoAdapter(motorElectrico);
+        var motorElectricoAdapter = new MotorElectricoAdapter(new MotorElectrico());
         motorElectricoAdapter.arrancar();
         motorElectricoAdapter.acelerar();
         motorElectricoAdapter.apagar();
